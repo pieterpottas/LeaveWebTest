@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveWeb", "LeaveWeb\LeaveWeb.csproj", "{9DCF3A4E-0C1B-4C79-8DB5-CCF08FF2040E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveLib", "LeaveLib\LeaveLib.csproj", "{F434F22B-1AC8-4AB1-B348-2FF02BAEBAD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveTests", "UnitTestProject1\LeaveTests.csproj", "{6F18C0BB-7B48-478A-9984-C859C4ECA1DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DCF3A4E-0C1B-4C79-8DB5-CCF08FF2040E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCF3A4E-0C1B-4C79-8DB5-CCF08FF2040E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCF3A4E-0C1B-4C79-8DB5-CCF08FF2040E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCF3A4E-0C1B-4C79-8DB5-CCF08FF2040E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F434F22B-1AC8-4AB1-B348-2FF02BAEBAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F434F22B-1AC8-4AB1-B348-2FF02BAEBAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F434F22B-1AC8-4AB1-B348-2FF02BAEBAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F434F22B-1AC8-4AB1-B348-2FF02BAEBAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F18C0BB-7B48-478A-9984-C859C4ECA1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F18C0BB-7B48-478A-9984-C859C4ECA1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F18C0BB-7B48-478A-9984-C859C4ECA1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F18C0BB-7B48-478A-9984-C859C4ECA1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

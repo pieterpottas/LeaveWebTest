@@ -1,0 +1,38 @@
+﻿@model LeaveWeb.Models.EmployeeListViewModel
+
+@using (Html.BeginForm())
+{
+    <table class="table table-striped">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                FullName
+            </th>
+            <th>
+                Manager
+            </th>
+        </tr>
+        <tbody>
+
+        @for (int a = 0; a < Model.EmployeeList.Count; a++)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(d => d.EmployeeList[a].Id)
+                    @Html.HiddenFor(d => d.EmployeeList[a].Id)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(d => d.EmployeeList[a].FullName, new { @class = "input-sm" })
+                </td>
+                <td>
+                    @Html.DropDownListFor(d => d.EmployeeList[a].ManagerId, Model.EmployeeList[a].ManagerList,new { @class = "input-sm" })
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <button type="submit">Save</button>
+}

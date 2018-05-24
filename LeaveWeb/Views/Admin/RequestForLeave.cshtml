@@ -1,0 +1,38 @@
+﻿@model LeaveWeb.Models.LeaveRequestListViewModel
+
+@using (Html.BeginForm())
+{
+    <table class="table table-striped">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Total days
+            </th>
+            <th>
+                Leave type - Employee
+            </th>
+        </tr>
+        <tbody>
+
+        @for (int a = 0; a < Model.LeaveRequests.Count; a++)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(d => d.LeaveRequests[a].Id)
+                    @Html.HiddenFor(d => d.LeaveRequests[a].Id)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(d => d.LeaveRequests[a].TotalCount, new {@class = "input-sm"})
+                </td>
+                <td>
+                    @Html.DropDownListFor(d => d.LeaveRequests[a].LeaveId, Model.LeaveRequests[a].LeaveList, new {@class = "input-sm"})
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <button type="submit">Save</button>
+}
